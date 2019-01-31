@@ -4,6 +4,12 @@ public class Recursion{
     return sqrter(n, tolerance, 1);
   }
   public static double sqrter(double n, double tolerance, double guess){
-   if (Math.abs(((guess * guess - n) / n)) * 100 <= tolerance) 
+   if (Math.abs(((guess * guess - n) / n)) * 100 <= tolerance){
+     return guess;
+   }
+    if (n == 0){
+      return 0;
+    }
+    return sqrter(n, (n/guess + guess) / 2, tolerance);
   }
 }
