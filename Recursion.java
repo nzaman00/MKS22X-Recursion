@@ -12,4 +12,10 @@ public class Recursion{
     }
     return sqrter(n, (n/guess + guess) / 2, tolerance);
   }
+  
+  public static void main(String[] args){
+    System.out.println(sqrt(36.0, .0000001));
+    System.out.println(sqrt(25.0, .0000001));
+    System.out.println(sqrt(100.0, .0000001));
+  }
 }
