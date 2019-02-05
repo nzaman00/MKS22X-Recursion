@@ -18,6 +18,12 @@ public class Recursion{
    }
     return 
   }
+  public static int fibHelper(int n, int i, int prev, int partial) {
+    if (n == i) {
+      return partial;
+    }
+    return fibHelp(n, i + 1, partial, prev + partial);
+  }
   
   public static void main(String[] args){
     System.out.println(sqrt(36.0, .0000001));
