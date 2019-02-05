@@ -29,7 +29,10 @@ public class Recursion{
     summinator(n, 0, L);
     return L;
   }
-  public static void summinator{
+  public static void summinator(int n, int partial, ArrayList<Integer> L){
+    if (n == 0) {
+      L.add(partial);
+    }
     
   }
   public static void main(String[] args){
