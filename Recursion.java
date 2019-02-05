@@ -24,10 +24,22 @@ public class Recursion{
     }
     return fibHelp(n, i + 1, partial, prev + partial);
   }
-  
+  public static ArrayList<Integer> makeAllSums(int n){
+    ArrayList<Integer> L = new ArrayList<Integer>();
+    summinator(n, 0, L);
+    return L;
+  }
+  public static void summinator{
+    
+  }
   public static void main(String[] args){
     System.out.println(sqrt(36.0, .0000001));
     System.out.println(sqrt(25.0, .0000001));
     System.out.println(sqrt(100.0, .0000001));
+    System.out.println(fib(0));
+    System.out.println(fib(1));
+    System.out.println(fib(2));
+    System.out.println(fib(3));
+    System.out.println(fib(10));
   }
 }
