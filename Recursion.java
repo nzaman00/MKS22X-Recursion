@@ -32,8 +32,10 @@ public class Recursion{
   public static void summinator(int n, int partial, ArrayList<Integer> L){
     if (n == 0) {
       L.add(partial);
+     } else {
+      summinator(n - 1, n + partial, L);
+      summinator(n - 1, partial, L);
     }
-    
   }
   public static void main(String[] args){
     System.out.println(sqrt(36.0, .0000001));
@@ -44,5 +46,8 @@ public class Recursion{
     System.out.println(fib(2));
     System.out.println(fib(3));
     System.out.println(fib(10));
+    System.out.println(makeAllSums(2));
+    System.out.println(makeAllSums(3));
+    System.out.println(makeAllSums(8));
   }
 }
