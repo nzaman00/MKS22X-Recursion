@@ -22,7 +22,7 @@ public class recursion{
     if (n == i) {
       return partial;
     }
-    return fibHelp(n, i + 1, partial, prev + partial);
+    return fibHelper(n, i + 1, partial, prev + partial);
   }
   public static ArrayList<Integer> makeAllSums(int n){
     ArrayList<Integer> L = new ArrayList<Integer>();
